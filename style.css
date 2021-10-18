@@ -8,3 +8,8 @@ body{
 h1{
     font-size:1.5rem;
 }
+
+a{
+   color: rgb(72, 74, 77);
+   text-decoration:none;
+}
