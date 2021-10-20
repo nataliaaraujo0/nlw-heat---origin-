@@ -1,15 +1,23 @@
-html, body{
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
-body{
-    display: grid;
-    place-items: center;
-}
-h1{
-    font-size:1.5rem;
+body {
+  display: grid;
+  place-items: center;
 }
 
-a{
-   color: rgb(72, 74, 77);
-   text-decoration:none;
+main {
+  background: url(/img/background.png);
+  width: 375px;
+  height: 812px;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+a {
+  color: rgb(72, 74, 77);
+  text-decoration: none;
 }
