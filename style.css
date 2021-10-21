@@ -9,7 +9,9 @@ body {
 
 body {
   --blue: hsla(235, 19%, 15%);
+  --blue-700: hsla(240, 17%, 49%);
   --gray: hsla(240, 9%, 89%);
+  --gray-200: hsla(240, 7%, 78%);
 
   background-color: var(--blue);
   display: grid;
@@ -26,6 +28,7 @@ main {
 
 .container {
   max-width: 250px;
+
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -33,6 +36,7 @@ main {
 
 .avatar {
   width: 10rem;
+
   margin: 11.5rem auto 0;
   position: relative;
 }
@@ -40,22 +44,47 @@ main {
 .avatar span {
   position: absolute;
   top: -15px;
+  z-index: 1;
 }
 
 .avatar > img {
   width: 10rem;
   height: 10rem;
-  object-fit: cover;
 
+  object-fit: cover;
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 }
 
 h1 {
   font-size: 1.5rem;
   color: var(--gray);
+
+  margin-top: 1.5rem;
 }
 
 a {
-  color: rgb(72, 74, 77);
+  color: var(--gray-200);
   text-decoration: none;
+
+  margin-top: 0.25rem;
+
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+p {
+  margin-top: 2rem;
+  color: var(--blue-700);
+}
+
+ul {
+  margin-top: 4rem;
+  list-style: none;
+  padding: 0;
+
+  display: flex;
+  gap: 0.5rem;
+
+  justify-content: center;
 }
